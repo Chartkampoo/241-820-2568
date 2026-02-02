@@ -1,0 +1,125 @@
+/* ตั้งค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* พื้นหลัง Dark Gradient */
+    background: linear-gradient(135deg, #f10000 0%, #020024 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container หลัก */
+.container {
+    background-color: #213aa7;
+    padding: 38px;
+    border-radius: 26px;
+    box-shadow: 0 20px 50px rgba(56, 189, 248, 0.15);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #0f172a;
+}
+
+/* หัวข้อ */
+.header {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #7dd3fc;
+    letter-spacing: -0.5px;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ระยะห่าง */
+.form-input {
+    margin-bottom: 22px;
+}
+
+/* Label */
+.header-form {
+    min-width: 90px;
+    font-weight: 600;
+    color: #cbd5f5;
+    font-size: 14px;
+}
+
+/* Input / Textarea */
+.form, textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 14px;
+    border: 2px solid #020617;
+    background-color: #020617;
+    outline: none;
+    color: #e5e7eb;
+    transition: all 0.25s ease;
+}
+
+/* Focus Effect */
+.form:focus,
+textarea:focus {
+    border-color: #38bdf8;
+    background-color: #020617;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
+}
+
+/* Placeholder */
+::placeholder {
+    color: #64748b;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+    margin-top: 8px;
+}
+
+/* Radio / Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #38bdf8;
+    transform: scale(1.15);
+}
+
+/* ปุ่ม */
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.button {
+    background: linear-gradient(135deg, #38bdf8 0%, #22d3ee 100%);
+    color: #020617;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.35);
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+    box-shadow: 0 16px 40px rgba(34, 211, 238, 0.45);
+}
+
+.button:active {
+    transform: translateY(0);
+}
